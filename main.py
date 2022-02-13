@@ -1,8 +1,13 @@
-import sys
-n = int(input('Your number:'))
-if n == 0:
-    sys.exit("Stop")
-if n % 2 == 0:
-    print('even')
+list=[ ]
+N = int(input("How many people was:"))
+for i in range(N):
+  mass=int(input("Your mass: "))
+  list.append(mass)
+listsum=sum(list)
+print(listsum)
+listavg=sum(list)/len(list)
+print(listavg)
+if listsum > 300:
+  print("They can't go  all together")
 else:
-    print('odd')
+  print("They can go all together")
